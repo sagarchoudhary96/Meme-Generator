@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+  <div class="container">
+    <h1>THE MEME GENERATOR</h1>
+    <div class="imagefile">
+      <input type="file" id="file" />
+    </div>
+    <div id="image-container">
+      <canvas width="500" height="500"></canvas>
+      <div id="input-container">
+        <span>Top Line:</span><br/>
+        <input id="topLineText" type="text"><br/>
+        <span>Bottom Line:</span><br/>
+        <input id="bottomLineText" type="text"><br/>
+        <button id="saveBtn" class="button">Save</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/generator.js"></script>
+</body>
+</html>
